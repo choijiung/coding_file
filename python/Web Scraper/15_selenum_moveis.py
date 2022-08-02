@@ -24,7 +24,7 @@
 
 from selenium import webdriver
 import time
-browser = webdriver.Chrome(r"D:\지웅현서\Coding File\Web Scraper\chromedriver.exe")
+browser = webdriver.Chrome()
 browser.maximize_window()
 
 url = "https://www.google.com/search?q=%EC%BD%94%EB%94%A9&rlz=1C1CHZN_koKR971KR971&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj1q5Syotf2AhUsIqYKHZhND7YQ_AUoAXoECAEQAw&biw=1366&bih=625&dpr=1&safe=active&ssui=on"

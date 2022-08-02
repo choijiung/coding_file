@@ -1,7 +1,7 @@
 from selenium import webdriver  
 import time
 
-browser = webdriver.Chrome(r"D:\지웅현서\Coding File\Web Scraper\chromedriver.exe")
+browser = webdriver.Chrome()
 browser.get("https://naver.com")
 
 elem = browser.find_element_by_class_name("link_login")
