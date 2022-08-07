@@ -1,4 +1,4 @@
 # coding_file
 coding_file
-python file run = command +shift + F10
+python file run = shift + z
 C, GO file run = control + option + N
