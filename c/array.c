@@ -1,6 +1,6 @@
 ﻿#include <stdio.h>
 
-int main(void)
+int main_array(void)
 {
 	/*int subway_1 = 30;
 	int subway_2 = 40;
@@ -102,12 +102,19 @@ int main(void)
 	// A : 65
 	// 0: 48
 
-	printf("%c\n", 'a');
-	printf("%d\n", 'a'); //<-아스키 코드 알아보는 방법
-	printf("%d\n", 'b'); 
-	printf("%d\n", 'A'); 
-	printf("%d\n", '\0'); 
-	printf("%d\n", '0'); 
-	printf("%d\n", '1');
+	// printf("%c\n", 'a');
+	// printf("%d\n", 'a'); //<-아스키 코드 알아보는 방법
+	// printf("%d\n", 'b'); 
+	// printf("%d\n", 'A'); 
+	// printf("%d\n", '\0'); 
+	// printf("%d\n", '0'); 
+	// printf("%d\n", '1');
+
+	//참고2: 0~127 사이의 아스키코드 정수값에 해당하는 문자 확인
+	for (int i = 0; i < 128; i++)
+	{
+		printf("아스키코드 정수 %d : %c\n", i, i);
+	}
+
 	return 0;
 }
