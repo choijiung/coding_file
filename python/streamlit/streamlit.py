@@ -1,6 +1,6 @@
 import streamlit as st
 veiw = [100, 150, 30]
-st.write("# Yotube view")
+st.write("# Youtube view")
 st.write("## raw")
 veiw
 st.write("## bar chart")
