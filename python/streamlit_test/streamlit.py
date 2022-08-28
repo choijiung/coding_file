@@ -7,4 +7,5 @@ st.write("## raw")
 veiw
 st.write("## bar chart")
 st.bar_chart(veiw)
+st.write("## pandas sheet")
 sheetview
