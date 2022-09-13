@@ -68,7 +68,7 @@ while running:
         print("출동했어요")
         running = False
 
-    if DDong_y_pos > screen_height - DDong_height:
+    if DDong_y_pos > screen_height:
         DDong_y_pos = 0 - DDong_height
         DDong_x_pos = randint(0, screen_width - DDong_width)
 
