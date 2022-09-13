@@ -17,14 +17,14 @@ background = pygame.image.load("/Users/Jiung/coding/coding_learn/python/pygame_b
 
 clock = pygame.time.Clock()
 
-character = pygame.image.load("/Users/Jiung/coding/coding_learn/python/pygame_basic/assets/Thor.png")
+character = pygame.image.load("/Users/Jiung/coding/coding_learn/python/pygame_basic/assets/character.png")
 character_size = character.get_rect().size
 character_width = character_size[0]
 character_height = character_size[1]
 character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height
 
-DDong = pygame.image.load("/Users/Jiung/coding/coding_learn/python/pygame_basic/assets/Hammer.png")
+DDong = pygame.image.load("/Users/Jiung/coding/coding_learn/python/pygame_basic/assets/enemy.png")
 DDong_size = DDong.get_rect().size
 DDong_width = DDong_size[0]
 DDong_height = DDong_size[1]
