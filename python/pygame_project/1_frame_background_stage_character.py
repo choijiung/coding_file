@@ -34,6 +34,9 @@ character_width = character_size[0]
 character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height - stage_height
 
+character_to_x = 0
+
+character_speed = 5
 
 running = True
 while running:
@@ -44,7 +47,24 @@ while running:
         if event.type == pygame.QUIT:
             running = False 
 
+        if event.type == pygame.KEYDOWN: #키가 눌러졌는가?
+            if event.key == pygame.K_LEFT:
+                character_to_x -= character_speed
+            elif event.key == pygame.K_RIGHT:
+                character_to_x += character_speed
+            elif event.key == pygame.K_SPACE:
+                pass
+
+        if event.type == pygame.K_UP:
+            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
+                character_to_x = 0
     # 3. 게임 캐릭터 위치 정의
+    character_x_pos += character_to_x
+
+    if character_x_pos < 0:
+        character_x_pos = 0
+    elif character_x_pos > screen_width - character_width:
+        character_x_pos = screen_width - character_width
     
     # 4. 충돌 처리
 
