@@ -9,31 +9,7 @@
             text-decoration: none;
         }
     </style>
-    <script>
-        function Setcolor(color) {
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length) {
-            alist[i].style.color = color;
-            i = i + 1;
-            }
-        }
-        function nightDayHandler(self) {
-            var target = document.querySelector('body');
-            if (self.value === 'night') {
-                target.style.backgroundColor = 'black';
-                target.style.color = 'white';
-                self.value = 'day';
-                Setcolor("white");
-
-            } else {
-                target.style.backgroundColor = 'white';
-                target.style.color = 'black';
-                self.value = 'night';
-                Setcolor("black")
-            }
-        }
-    </script>
+    <script src ="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>

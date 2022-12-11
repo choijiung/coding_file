@@ -4,6 +4,7 @@
     <title>WEB1 - JavaScript</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src ="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html" id='atag'>WEB</a></h1>
@@ -21,24 +22,7 @@
         </div>
     </div>
     <input id='night_day' type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if (this.value === 'night') {
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        document.querySelector('#a').style.color = 'white';
-        document.querySelector('#at').style.color = 'white';
-        document.querySelector('#tag').style.color = 'white';
-        document.querySelector('#atag').style.color = 'white';
-        this.value = 'day';
-    } else {
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        document.querySelector('#atag').style.color = 'black';
-        document.querySelector('#a').style.color = 'black';
-        document.querySelector('#at').style.color = 'black';
-        document.querySelector('#tag').style.color = 'black';
-        this.value = 'night'
-    }
+    nightDayHandler(this);
     ">
 </body>
 </html>
